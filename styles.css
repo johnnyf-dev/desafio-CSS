@@ -1,0 +1,145 @@
+* {
+    font-family: "Comic Relief", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #17233d;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+#but_sign {
+    color: white;
+    background-color: aqua;
+    border: none;
+    border-radius: 5px;
+    margin-left: 15px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+
+}
+
+#but_sign:hover {
+    background: #0056b3;
+}
+
+.section_geral {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    /*  separa as colunas */
+    align-items: start;
+    /* alinha as colunas no topo */
+    margin: 0 5%;
+    /* margin-top: 5%; */
+}
+
+.img_home {
+    width: 35%;
+    margin-top: 10%;
+}
+
+.img_home img {
+    /*  margin-left: 5%;
+    margin-top: 10%; */
+    width: 100%;
+    height: auto;
+    /* display: inline-block; */
+
+}
+
+.description {
+    margin-left: 5%;
+    margin-top: 15%;
+    margin-right: 5%;
+    vertical-align: top;
+    margin-top: 15%;
+    width: 55%;
+    /* display: inline-block; */
+
+
+}
+
+.section {
+    vertical-align: top;
+}
+
+h1 {
+    font-weight: 900;
+    margin-bottom: 8%;
+    color: #171a49;
+}
+
+p {
+    font-size: 18px;
+    color: #4b504a;
+    margin-bottom: 8%;
+    width: 35%;
+}
+
+.learn_more {
+    background-color: white;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 844px) {
+    a {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px;
+    }
+
+    .img_home {
+        position: fixed;
+        /* flutua no viewport */
+        bottom: 10%;
+        /* distância do rodapé da tela */
+        left: 50%;
+        /* centraliza horizontalmente */
+        transform: translateX(-50%);
+        width: 80%;
+        /* proporcional */
+        height: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .section_geral {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+    }
+
+    p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .description {
+        margin: 0;
+        margin-top: 5%;
+        width: 80%;
+    }
+
+    .learn_more {
+
+        display: block;
+        margin: 0 auto;
+    }
+}
